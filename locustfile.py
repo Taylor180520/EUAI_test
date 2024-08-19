@@ -18,10 +18,10 @@ class ChatUser(HttpUser):
                     {
                         "content": random.choice(
                             [
-                                "What is included in my Northwind Health Plus plan that is not in standard?",
-                                "What does a Product Manager do?",
-                                "What happens in a performance review?",
-                                "Whats your whistleblower policy?",
+                                "What is linear programming?",
+                                "How to calculate breakeven point?",
+                                "What are the main steps involved in preparing a zero-based budget?",
+                                "What are the examples for relevant costs?",
                             ]
                         ),
                         "role": "user",
@@ -43,12 +43,12 @@ class ChatUser(HttpUser):
             "/chat",
             json={
                 "messages": [
-                    {"content": "What happens in a performance review?", "role": "user"},
+                    {"content": "What is linear programming?", "role": "user"},
                     {
-                        "content": "During a performance review, employees will receive feedback on their performance over the past year, including both successes and areas for improvement. The feedback will be provided by the employee's supervisor and is intended to help the employee develop and grow in their role [employee_handbook-3.pdf]. The review is a two-way dialogue between the employee and their manager, so employees are encouraged to be honest and open during the process [employee_handbook-3.pdf]. The employee will also have the opportunity to discuss their goals and objectives for the upcoming year [employee_handbook-3.pdf]. A written summary of the performance review will be provided to the employee, which will include a rating of their performance, feedback, and goals and objectives for the upcoming year [employee_handbook-3.pdf].",
+                        "content": "In situations where more than one factor is limited, an alternative approach is used to determine the optimal production so as to maximise contribution (and, therefore, profit). This technique is linear programming",
                         "role": "assistant",
                     },
-                    {"content": "Does my plan cover eye exams?", "role": "user"},
+                    {"content": "Can you show me some eaxamples of linear programming?", "role": "user"},
                 ],
                 "context": {
                     "overrides": {
@@ -75,7 +75,7 @@ class ChatVisionUser(HttpUser):
             json={
                 "messages": [
                     {
-                        "content": "Can you identify any correlation between oil prices and stock market trends?",
+                        "content": "How to calculate breakeven point?",
                         "role": "user",
                     }
                 ],
@@ -104,7 +104,7 @@ class ChatVisionUser(HttpUser):
             "/chat/stream",
             json={
                 "messages": [
-                    {"content": "Compare the impact of interest rates and GDP in financial markets.", "role": "user"}
+                    {"content": "What are the main steps involved in preparing a zero-based budget?", "role": "user"}
                 ],
                 "context": {
                     "overrides": {

@@ -38,7 +38,7 @@ const Layout = () => {
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer} ref={menuRef}>
                     <Link to="/" className={styles.headerTitleContainer}>
-                        <h3 className={styles.headerTitle}>Azure OpenAI + AI Search</h3>
+                        <h3 className={styles.headerTitle}>EUAI EmpowerU</h3>
                     </Link>
                     <nav>
                         <ul className={`${styles.headerNavList} ${menuOpen ? styles.show : ""}`}>
@@ -51,7 +51,7 @@ const Layout = () => {
                                     Chat
                                 </NavLink>
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink
                                     to="/qa"
                                     className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}
@@ -59,7 +59,7 @@ const Layout = () => {
                                 >
                                     Ask a question
                                 </NavLink>
-                            </li>
+                            </li> */}
                         </ul>
                     </nav>
                     <div className={styles.loginMenuContainer}>

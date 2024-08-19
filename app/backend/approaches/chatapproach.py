@@ -10,10 +10,12 @@ from approaches.approach import Approach
 
 class ChatApproach(Approach, ABC):
     query_prompt_few_shots: list[ChatCompletionMessageParam] = [
-        {"role": "user", "content": "How did crypto do last year?"},
-        {"role": "assistant", "content": "Summarize Cryptocurrency Market Dynamics from last year"},
-        {"role": "user", "content": "What are my health plans?"},
-        {"role": "assistant", "content": "Show available health plans"},
+        {"role": "user", "content": "What is the difference between nominal GDP and real GDP?"},
+        {"role": "assistant", "content": "Compare nominal GDP and real GDP and give examples"},
+        {"role": "user", "content": "What is the key feature of monopolistic competition?"},
+        {"role": "assistant", "content": "List key features of monopolistic competition and give examples "},
+	      {"role": "user", "content": "What is movement along demand curve?"},
+        {"role": "assistant", "content": "Define and interpret movement along demand curve and give examples"},
     ]
     NO_RESPONSE = "0"
 
